@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a653337dfa.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -69,8 +70,12 @@
                     </div>
 
                 </div>
-                <div class=" hidden lg:inline pr-6">
+                <div class=" hidden lg:flex items-center  pr-6">
                     <input class="py-2 px-7 rounded-full" type="text" placeholder="Search here">
+                    <button class="-ml-9"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                      </button>
                 </div>
             </div>
         </nav>
@@ -199,8 +204,8 @@
         <!-- Deal Of the  day Section Start -->
 
         <section>
-            <div class="hero bg-white my-8 flex justify-between">
-                <div class="hero-content flex-col lg:flex-row">
+            <div class="hero  bg-white my-8 flex">
+                <div class=" items-center flex flex-col justify-between lg:flex-row">
                     <div class="text-center lg:text-left flex-1">
                         <h1 class="text-5xl font-bold">Deal of the day</h1>
                         <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece
@@ -208,26 +213,30 @@
                     </div>
                     <div class="grid flex-1 grid-flow-col gap-5 text-center justify-end auto-cols-max">
                         <div class="flex  flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:15;"></span>
+                            <span class="countdown font-extrabold text-6xl">
+                                <span style="--value:29;"></span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                  </svg>
+                                  
                             </span>
                             days
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:10;"></span>
+                            <span class="countdown font-extrabold text-6xl">
+                                <span style="--value:15;"></span>
                             </span>
                             hours
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:24;"></span>
+                            <span class="countdown font-extrabold text-6xl">
+                                <span style="--value:25;"></span>
                             </span>
                             min
                         </div>
                         <div class="flex flex-col">
-                            <span class="countdown font-mono text-5xl">
-                                <span style="--value:26;"></span>
+                            <span class="countdown font-extrabold text-6xl">
+                                <span style="--value:08;"></span>
                             </span>
                             sec
                         </div>
@@ -240,7 +249,7 @@
         <!-- Deal of the Day Section End -->
         
         <!-- Card Section Start -->
-        <Section class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-6">
+        <Section class="grid grid-cols-1 my-12 lg:grid-cols-4 md:grid-cols-2 gap-6">
             <div class="card border-2  bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
                     <img src="/images/fruit6.png" alt="Apples" class="rounded-xl" />
@@ -250,24 +259,37 @@
                     
                     <p class="text-[#121212] text-base">Apples</p>
                     <div class="rating">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                     </div>
                     <div class="card-actions">
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn btn-link capitalize text-[#F85559]" onclick="my_modal_5.showModal()">Details
+                        <button class="btn btn-link no-underline capitalize text-[#F85559]" onclick="my_modal_5.showModal()">Details
                         </button>
                         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
-                                <h3 class="font-bold text-lg">Hello!</h3>
-                                <p class="py-4">Press ESC key or click the button below to close</p>
-                                <div class="modal-action">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
-                                </div>
+                                <figure class="px-10 py-5">
+                                    <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                  </figure>
+                                  <div class="card-body py-4 items-center text-center">
+                                    <h2 class=" text-4xl font-extrabold mb-3">Banana</h2>
+                                    <p class="text-base mb-3 font-normal">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating mb-3">
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                  </div>
+                                    <div class="card-actions space-x-3 ">
+                                      <button class="btn capitalize btn-outline btn-error">Close</button>
+                                      <button class="btn capitalize text-white bg-back-color-pri">Buy Now</button>
+                                      
+                                    </div>
+                                  </div>
                             </form>
                         </dialog>
                     </div>
@@ -290,16 +312,29 @@
                     </div>
                     <div class="card-actions">
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn btn-link capitalize text-[#F85559]" onclick="my_modal_6.showModal()">Details
+                        <button class="btn btn-link no-underline capitalize text-[#F85559]" onclick="my_modal_6.showModal()">Details
                         </button>
                         <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
-                                <h3 class="font-bold text-lg">Hello!</h3>
-                                <p class="py-4">Press ESC key or click the button below to close</p>
-                                <div class="modal-action">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
-                                </div>
+                                <figure class="px-10 py-5">
+                                    <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                  </figure>
+                                  <div class="card-body py-4 items-center text-center">
+                                    <h2 class=" text-4xl font-extrabold mb-3">Banana</h2>
+                                    <p class="text-base mb-3 font-normal">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating mb-3">
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                  </div>
+                                    <div class="card-actions space-x-3 ">
+                                      <button class="btn capitalize btn-outline btn-error">Close</button>
+                                      <button class="btn capitalize text-white bg-back-color-pri">Buy Now</button>
+                                      
+                                    </div>
+                                  </div>
                             </form>
                         </dialog>
                     </div>
@@ -322,16 +357,29 @@
                     </div>
                     <div class="card-actions">
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn btn-link capitalize text-[#F85559]" onclick="my_modal_7.showModal()">Details
+                        <button class="btn btn-link no-underline capitalize text-[#F85559]" onclick="my_modal_7.showModal()">Details
                         </button>
                         <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
-                                <h3 class="font-bold text-lg">Hello!</h3>
-                                <p class="py-4">Press ESC key or click the button below to close</p>
-                                <div class="modal-action">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
-                                </div>
+                                <figure class="px-10 py-5">
+                                    <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                  </figure>
+                                  <div class="card-body py-4 items-center text-center">
+                                    <h2 class=" text-4xl font-extrabold mb-3">Banana</h2>
+                                    <p class="text-base mb-3 font-normal">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating mb-3">
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                      <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                  </div>
+                                    <div class="card-actions space-x-3 ">
+                                      <button class="btn capitalize btn-outline btn-error">Close</button>
+                                      <button class="btn capitalize text-white bg-back-color-pri">Buy Now</button>
+                                      
+                                    </div>
+                                  </div>
                             </form>
                         </dialog>
                     </div>
@@ -349,27 +397,45 @@
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
                     </div>
                     <div class="card-actions">
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn btn-link capitalize text-[#F85559]" onclick="my_modal_8.showModal()">Details
+                        <button class="btn btn-link no-underline capitalize text-[#F85559]" onclick="my_modal_8.showModal()">Details
                         </button>
                         <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
                             <form method="dialog" class="modal-box">
-                                <h3 class="font-bold text-lg">Hello!</h3>
-                                <p class="py-4">Press ESC key or click the button below to close</p>
-                                <div class="modal-action">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
-                                </div>
+                                    <figure class="px-10 py-5">
+                                      <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body py-4 items-center text-center">
+                                      <h2 class=" text-4xl font-extrabold mb-3">Banana</h2>
+                                      <p class="text-base mb-3 font-normal">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                      <div class="rating mb-3">
+                                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                    </div>
+                                      <div class="card-actions space-x-3 ">
+                                        <button class="btn capitalize btn-outline btn-error">Close</button>
+                                        <button class="btn capitalize text-white bg-back-color-pri">Buy Now</button>
+                                        
+                                      </div>
+                                    </div>
                             </form>
                         </dialog>
                     </div>
                 </div>
             </div>
         </Section>
+        
+            <div class="flex my-12 justify-center">
+                <button class="btn bg-back-color-pri text-white">Shop All</button>
+            </div>
+            
     </main>
 
     <!-- Main Section End -->
